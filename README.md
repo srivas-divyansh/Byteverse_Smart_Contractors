@@ -1,7 +1,5 @@
 # byteverse_Smart_Contractors
 This is the voting system based on blockchain.
-# byteverse_Smart_Contractors
-This is the voting system based on blockchain.
 * Government spends crores of rupees in securing and transporting EVMs and huge amounts of money on resources and security at every poll booth.
 * We, as smart contractors are here with the solution to this problem.
 * A voting system based on blockchain technology is a decentralized and secure way to conduct elections. 
