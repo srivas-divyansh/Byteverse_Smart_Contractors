@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.top{
+  background-color: #1a1d6c;
+  height:7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+.t-left,.t-right{
+  display: flex;
+  flex-direction: row;
+}
+.h1{
+  height: 5rem;
+  width: 5.2rem;
+  overflow: hidden;
+  margin-left: 2rem;
+  object-position: center;
+  margin-top: 1rem;
+  background-color:white ;
+  border-radius: 2.5rem;
+}
+.elec-logo{
+  height: 5rem;
+}
+
+.eci{
+  color: white;
+  margin-left: 2rem;
+  margin-top: 0;
+
+}
+h3{
+  font-size: 1.5rem;
+  margin-top: 0.4rem;
+  padding: 0;
+}
+h2{
+  margin-bottom: 0;
+  padding: 0;
+  width:20rem;
+  text-align: justify;
+}
+
+.flag{
+  height:5rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+.emb{
+  height: 5.6rem;
+  margin-right: 2rem;
+  margin-top: 0.7rem;
+}
+
+
+
+/* Main Voting Page */
+.vote-box{
+  background: rgba(196, 194, 227, 0.64);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  height: 25rem;
+  width: 60rem;
+  margin:auto;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.party{
+  display: flex;
+  flex-direction: none;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: solid;
+  width:90%;
+  margin:auto;
+  border-width: 1px;
+  margin-bottom: 2px;
+}
+
+button{
+  border-radius: 2.5rem;
+  width: 5rem;
+  height: 5rem;
+  padding: 0;
+  border: none;
+  background-color: white;
+  margin-left: 6rem;
+}
+.party-logo{
+  height:4rem;
+  width: 4rem;
+  border-radius: 2rem;
+}
+.party-logo:hover{
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+.party-name{
+  font-size: 1.6rem;
+  height:2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: bold;
+}
+.voting-bool{
+  height:4rem;
+  width:7rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: red;
+  border:solid;
+  border-color: black;
+  box-shadow: -0.05rem -0.05rem 0.1rem 0.1rem rgba(0, 0, 0, 0.372) inset;
+  margin-right: 6rem;
+}
