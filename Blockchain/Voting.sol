@@ -87,22 +87,22 @@ contract Voting{
     }
 
     //This function will return the votes of BJP
-    function VotesOfBJP() public view returns(uint) {
+    function VotesOfBJP() external view Time() returns(uint) {
         return bjp;
     }
 
     //This function will return the votes of Congress
-    function VotesOfCongress() public view returns(uint) {
+    function VotesOfCongress() external view Time() returns(uint) {
         return congress;
     }
 
     //This function will return the votes of AAP
-    function VotesOfAAP() public view returns(uint) {
+    function VotesOfAAP() external view Time() returns(uint) {
         return aap;
     }
 
     //This function will return the votes of None of the above
-    function VotesOfNOTA() public view returns(uint) {
+    function VotesOfNOTA() external view Time() returns(uint) {
         return nota;
     }
 
