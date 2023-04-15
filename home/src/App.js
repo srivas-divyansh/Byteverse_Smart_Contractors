@@ -1,12 +1,13 @@
 import "./App.css";
+import React from "react";
+import NavBar from "./nav";
 import Top from "./page-top";
-import Main from "./vote-pad";
 
 function App() {
   return (
     <div>
       <Top />
-      <Main />
+      <NavBar />
     </div>
   );
 }

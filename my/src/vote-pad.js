@@ -1,5 +1,4 @@
 import React from "react";
-import { useRef } from "react";
 import bjp from "./Bharatiya_Janata_Party_logo.svg.png";
 import congress from "./Indian_National_Congress_hand_logo.png";
 import aap from "./aap.png";
@@ -9,7 +8,7 @@ export default function Main() {
   return (
     <div className="vote-box">
       <div className="party">
-        <button id="one" onClick={voted}>
+        <button id="one">
           <img src={bjp} className="party-logo" />
         </button>
         <div className="party-name">Bharatiya Janata Party</div>
@@ -17,7 +16,7 @@ export default function Main() {
       </div>
 
       <div className="party">
-        <button id="two" onClick={voted}>
+        <button id="two">
           <img src={congress} className="party-logo" />
         </button>
         <div className="party-name">Indian National Congress</div>
@@ -25,7 +24,7 @@ export default function Main() {
       </div>
 
       <div className="party">
-        <button id="three" onClick={voted}>
+        <button id="three">
           <img src={aap} className="party-logo" />
         </button>
         <div className="party-name">Aam Aadmi Party</div>
@@ -33,7 +32,7 @@ export default function Main() {
       </div>
 
       <div className="party">
-        <button id="four" onClick={voted}>
+        <button id="four">
           <img src={nota} className="party-logo" />
         </button>
         <div className="party-name">N O T A</div>

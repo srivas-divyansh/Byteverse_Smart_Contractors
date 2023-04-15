@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.top {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #1a1d6c;
+  height: 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  z-index: 5;
+}
+.t-left,
+.t-right {
+  display: flex;
+  flex-direction: row;
+}
+.h1 {
+  height: 5rem;
+  width: 5.2rem;
+  overflow: hidden;
+  margin-left: 2rem;
+  object-position: center;
+  margin-top: 1rem;
+  background-color: white;
+  border-radius: 2.5rem;
+}
+.elec-logo {
+  height: 5rem;
+}
+
+.eci {
+  color: white;
+  margin-left: 2rem;
+  margin-top: 0;
+}
+h3 {
+  font-size: 1.5rem;
+  margin-top: 0.4rem;
+  padding: 0;
+}
+h2 {
+  margin-bottom: 0;
+  padding: 0;
+  width: 20rem;
+  text-align: justify;
+}
+
+.flag {
+  height: 5rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+.emb {
+  height: 5.6rem;
+  margin-right: 2rem;
+  margin-top: 0.7rem;
+}
+
+/*Nav bar ke liye code */
+.nav-bar{
+  position: fixed;
+  top:7rem;
+  left:0rem;
+  height:100%;
+  width:12rem;
+  background-color: #1a1d6c;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+}
+.nav{
+  text-align: center;
+  padding: 1.6rem;
+  transition: 0.2s;
+}
+.nav:hover{
+  transform: scale(1.1);
+}
+
+
+/*
+This is for Home.jsx
+*/
+.home-main{
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+.p-bar{
+  position: relative;
+  top: 7rem;
+  left: 12rem;
+  width: 26rem;
+}
+.CircularProgressbar{
+  margin-top: 3rem;
+  height: 16rem;
+  width: 16rem;
+  z-index: 1;
+}
+.state-name{
+  position: absolute;
+  top: 12rem;
+  width: 20rem;
+  right:17rem;
+  font-size: 6rem;
+  font-weight: bolder;
+  text-align:center;
+  color: #1a1d6c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.phase{
+  margin-left: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #25264d;
+}
+.see-more{
+  position: absolute;
+  top:23rem;
+  right:10.5rem;
+  text-decoration: underline;
+  color:blue;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.see-more:hover{
+  color:black;
+}
+.list-of-const{
+  position: absolute;
+  top:30rem;
+  right:8rem;
+  width:64%;
+}
+.list-cont{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  padding: 0.2rem;
+  background-color: bisque;
+}
