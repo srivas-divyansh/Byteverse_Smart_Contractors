@@ -148,6 +148,14 @@ samples, guidance on mobile development, and a full API reference.
 |truffle| 5.1.39|
 |typescript| 4.3.5|
 |web3| 1.2.11|
+|@testing-library/jest-dom|5.16.5|
+|@testing-library/react|13.4.0|
+|@testing-library/user-event|13.5.0|
+|react|18.2.0|
+|react-circular-progressbar|2.1.0|
+|react-dom|18.2.0|
+|react-scripts|5.0.1|
+|web-vitals|2.1.4|
 
 ### The dependencies used in developing the app.
 | Nodes | Version |
