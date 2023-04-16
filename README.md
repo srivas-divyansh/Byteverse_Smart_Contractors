@@ -1,4 +1,4 @@
-# byteverse_Smart_Contractors
+# Byteverse_Smart_Contractors
 This is the voting system based on blockchain.
 * Government spends crores of rupees in securing and transporting EVMs and huge amounts of money on resources and security at every poll booth.
 * We, as smart contractors are here with the solution to this problem.
@@ -26,9 +26,10 @@ Different contracts will be made for different elections. For example, for the e
 * The voting will be done through a special EVM type of keyboard for convenient usage.
 * As soon as voting of a particular person is done the session ends and the operation will again activate the session for next voting.
 
+Video link of the Project Walkthrough: https://drive.google.com/drive/folders/17NSuqpJZPntP7yEpU9ylnc5xmSpBYNc0?usp=share_link
+
 
 ## Dependencies used in the project
-
 
 ## Getting Started with Create React App
 
@@ -186,4 +187,7 @@ samples, guidance on mobile development, and a full API reference.
 <img width="960" alt="Screenshot 2023-04-16 153945" src="https://user-images.githubusercontent.com/112328989/232295545-adbe7c1b-537d-4bdf-9abc-8ddb53ae5d65.png">
 <img width="960" alt="Screenshot 2023-04-16 154002" src="https://user-images.githubusercontent.com/112328989/232295551-c3303a53-de61-469b-917d-4c40dbc08e8c.png">
 <img width="960" alt="Screenshot 2023-04-16 154025" src="https://user-images.githubusercontent.com/112328989/232295558-799d0f82-c676-4fd4-8f48-7339dbc46105.png">
+
+### Interface of the Voting Portal
+<img width="960" alt="Screenshot 2023-04-16 175417" src="https://user-images.githubusercontent.com/112328989/232309944-0ede9386-38e8-40ef-9e6e-1a187e2e9058.png">
 
