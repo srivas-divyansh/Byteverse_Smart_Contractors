@@ -13,6 +13,20 @@ Different contracts will be made for different elections. For example, for the e
     3. **Counting**: Counts the number of votes given to the particular party.
     4. **Declaration** of result: Declares the result as soon as the time is over.
 
+## Implementation of the project
+
+* A government official will have the login info of his own.
+* A special keyboard-type machine will be used in order to vote, even by the non-techie people.
+* All the system will be set up in cyber café-like area prior to one day of the elections.
+* The people will be allotted a polling booth for giving their votes
+* The people will enter along with their Aadhar/voter-id card and biometric verification will be followed.
+* The biometric verification confirms the identity of the person.
+* Additionally, biometric verification also ensure that the person has already given his vote or not in the same election.
+* An operator will activate session for voting by his biometric verification.
+* The voting will be done through a special EVM type of keyboard for convenient usage.
+* As soon as voting of a particular person is done the session ends and the operation will again activate the session for next voting.
+
+
 ## Dependencies used in the project
 
 
@@ -106,29 +120,31 @@ samples, guidance on mobile development, and a full API reference.
 
 * Wallet is required to deploy the contract of the voting.
 
-### The following dependencies are used to implement in linking the contract with front-end   
-"@types/jest": "^26.0.24",
-    "@types/node": "^16.3.1",
-    "@types/react": "^17.0.14",
-    "@types/react-dom": "^17.0.9",
-    "babel-polyfill": "6.26.0",
-    "babel-preset-env": "1.7.0",
-    "babel-preset-es2015": "6.24.1",
-    "babel-preset-stage-2": "6.24.1",
-    "babel-preset-stage-3": "6.24.1",
-    "babel-register": "6.26.0",
-    "bootstrap": "4.3.1",
-    "chai": "4.2.0",
-    "chai-as-promised": "7.1.1",
-    "chai-bignumber": "3.0.0",
-    "identicon.js": "^2.3.3",
-    "react": "^16.8.4",
-    "react-bootstrap": "1.0.0-beta.5",
-    "react-dom": "16.8.4",
-    "react-particles-js": "^3.5.3",
-    "react-scripts": "2.1.3",
-    "react-tsparticles": "^1.31.2",
-    "solc": "^0.8.19",
-    "truffle": "^5.1.39",
-    "typescript": "^4.3.5",
-    "web3": "1.2.11"
+### The following dependencies are used to implement in linking the contract with front-end  
+| Nodes | Version |
+| ----- | ------- | 
+|@types/jest| 26.0.24 |
+|@types/node| 16.3.1 |
+|@types/react| 17.0.14 |
+|@types/react-dom| 17.0.9 |
+|babel-polyfill| 6.26.0 |
+|babel-preset-env| 1.7.0 |
+|babel-preset-es2015| 6.24.1|
+|babel-preset-stage-2| 6.24.1|
+|babel-preset-stage-3| 6.24.1|
+|babel-register| 6.26.0|
+|bootstrap| 4.3.1|
+|chai| 4.2.0|
+|chai-as-promised| 7.1.1|
+|chai-bignumber| 3.0.0|
+|identicon.js| 2.3.3|
+|react| 16.8.4|
+|react-bootstrap| 1.0.0-beta.5|
+|react-dom| 16.8.4|
+|react-particles-js| 3.5.3|
+|react-scripts| 2.1.3|
+|react-tsparticles| 1.31.2|
+|solc| 0.8.19|
+|truffle| 5.1.39|
+|typescript| 4.3.5|
+|web3| 1.2.11|
