@@ -158,3 +158,24 @@ samples, guidance on mobile development, and a full API reference.
   |syncfusion_flutter_gauges|21.1.39|
   |simple_gradient_text|1.2.4|
   |scroll_loop_auto_scroll|0.0.5|
+  
+  ## Screenshot of the Interface
+  
+  ### Interface of the App
+  
+  ![WhatsApp Image 2023-04-16 at 15 42 06](https://user-images.githubusercontent.com/112328989/232294691-bbca78f1-0c5d-405f-acde-194d6f95ebf9.jpg)
+
+![WhatsApp Image 2023-04-16 at 15 34 45](https://user-images.githubusercontent.com/112328989/232294730-52d85ced-f3f9-42f5-a47a-3c311b5482c8.jpg)
+
+  ![WhatsApp Image 2023-04-16 at 15 34 44](https://user-images.githubusercontent.com/112328989/232294531-b2ee19db-1377-48fe-b557-32692e14eb06.jpg)
+  
+  ![WhatsApp Image 2023-04-16 at 15 34 44](https://user-images.githubusercontent.com/112328989/232294783-9bdff057-2abd-4cea-9542-9e5d16f9283f.jpg)
+
+
+### Interface of the Web
+<img width="960" alt="Screenshot 2023-04-16 153839" src="https://user-images.githubusercontent.com/112328989/232295529-b09992de-daec-4307-86d4-72892c674d22.png">
+<img width="960" alt="Screenshot 2023-04-16 153918" src="https://user-images.githubusercontent.com/112328989/232295540-02b53622-0005-428f-a19b-6e4b0370055f.png">
+<img width="960" alt="Screenshot 2023-04-16 153945" src="https://user-images.githubusercontent.com/112328989/232295545-adbe7c1b-537d-4bdf-9abc-8ddb53ae5d65.png">
+<img width="960" alt="Screenshot 2023-04-16 154002" src="https://user-images.githubusercontent.com/112328989/232295551-c3303a53-de61-469b-917d-4c40dbc08e8c.png">
+<img width="960" alt="Screenshot 2023-04-16 154025" src="https://user-images.githubusercontent.com/112328989/232295558-799d0f82-c676-4fd4-8f48-7339dbc46105.png">
+
