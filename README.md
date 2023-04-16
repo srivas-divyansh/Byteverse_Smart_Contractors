@@ -149,7 +149,7 @@ samples, guidance on mobile development, and a full API reference.
 |typescript| 4.3.5|
 |web3| 1.2.11|
 
-### The dependencies used in developin the app.
+### The dependencies used in developing the app.
 | Nodes | Version |
 | ----- | ------- |
 |cupertino_icons|1.0.2|
