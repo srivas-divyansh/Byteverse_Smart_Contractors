@@ -148,3 +148,13 @@ samples, guidance on mobile development, and a full API reference.
 |truffle| 5.1.39|
 |typescript| 4.3.5|
 |web3| 1.2.11|
+
+### The dependencies used in developin the app.
+| Nodes | Version |
+| ----- | ------- |
+|cupertino_icons|1.0.2|
+ |font_awesome_flutter:|0.4.0|
+ |marquee|2.2.3|
+  |syncfusion_flutter_gauges|21.1.39|
+  |simple_gradient_text|1.2.4|
+  |scroll_loop_auto_scroll|0.0.5|
