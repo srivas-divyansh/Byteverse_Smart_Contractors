@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:updates_app/Pages/home_page.dart';
 import 'package:updates_app/Pages/constituency.dart';
+import 'package:updates_app/Pages/news.dart';
+import 'package:updates_app/Pages/notice.dart';
 import 'package:updates_app/utils/routes.dart';
 
 void main(){
@@ -28,6 +30,8 @@ class MyApp extends StatelessWidget {
           "/":(context)=>HomePage(),
         MyRoutes.HomeRoute: (context)=>HomePage(),
         MyRoutes.ConstRoute: (context)=>ConstPage(),
+        MyRoutes.NewsRoute: (context)=>NewsPage(),
+        MyRoutes.NoticeRoute: (context)=>NoticePage(),
       },
     );
   }

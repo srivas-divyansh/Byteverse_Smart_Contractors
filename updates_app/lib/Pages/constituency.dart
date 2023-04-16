@@ -17,7 +17,7 @@ class _ConstPageState extends State<ConstPage> {
         preferredSize: Size.fromHeight(60),
         child: AppBar(
           title: Text(
-              'InfoApp',
+              'VoteEase',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
@@ -1429,7 +1429,7 @@ class _ConstPageState extends State<ConstPage> {
                       width: 30,
                     )
                   ],
-                ),                
+                ),
               ]
           ),
         ),

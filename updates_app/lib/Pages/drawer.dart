@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:updates_app/utils/routes.dart';
 
 class MyDrawer extends StatefulWidget {
   const MyDrawer({Key? key}) : super(key: key);
@@ -18,10 +19,30 @@ class _MyDrawerState extends State<MyDrawer> {
             child: ListView(
               padding: EdgeInsets.zero,
               children: [
-                SizedBox(height:60),
+                SafeArea(
+                  child: Column(
+                    children: [
+                      SizedBox(height:10),
+                      SizedBox(
+                          child: Row(
+                            children: [
+                              Image.asset("assets/images/embelem.jpg",width: 60,height: 60),
+                              Text('VoteEase', style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 30
+                              )),
+                            ],
+                          ),
+                      ),
+                    ],
+                  ),
+                ),
                 ListTile(
                   leading: Icon(Icons.home, color: Colors.black),
                   title:Text('Home',style: TextStyle(color:Colors.black,fontWeight:FontWeight.bold,fontSize:20)),
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
                 ),
                 SizedBox(height:20),
                 ListTile(
@@ -32,23 +53,32 @@ class _MyDrawerState extends State<MyDrawer> {
                 ListTile(
                   leading: Icon(Icons.ballot_rounded, color: Colors.black),
                   title:Text('Current Election',style: TextStyle(color:Colors.black,fontWeight:FontWeight.bold,fontSize:20)),
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
                 ),
                 SizedBox(height:20),
                 ListTile(
                   leading: Icon(CupertinoIcons.news_solid, color: Colors.black),
                   title:Text('News',style: TextStyle(color:Colors.black,fontWeight:FontWeight.bold,fontSize:20)),
+                  onTap: () {
+                    Navigator.pushNamed(context, MyRoutes.NewsRoute);
+                  },
                 ),
                 SizedBox(height:20),
                 ListTile(
                   leading: Icon(Icons.developer_board, color: Colors.black),
                   title:Text('Notices',style: TextStyle(color:Colors.black,fontWeight:FontWeight.bold,fontSize:20)),
+                  onTap: () {
+                    Navigator.pushNamed(context, MyRoutes.NoticeRoute);
+                  },
                 ),
                 SizedBox(height:20),
                 ListTile(
                   leading: Icon(CupertinoIcons.info_circle, color: Colors.black),
                   title:Text('About Us',style: TextStyle(color:Colors.black,fontWeight:FontWeight.bold,fontSize:20)),
                 ),
-                SizedBox(height:300),
+                SizedBox(height:200),
                 ListTile(
                   title: Row(
                     children: [
