@@ -39,6 +39,7 @@ dependencies:
   marquee: ^2.2.3
   syncfusion_flutter_gauges: ^21.1.39
   simple_gradient_text: ^1.2.4
+  scroll_loop_auto_scroll: ^0.0.5
 
 dev_dependencies:
   flutter_test:

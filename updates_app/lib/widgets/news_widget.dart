@@ -61,7 +61,7 @@ class ItemWidget extends StatelessWidget {
             elevation: 2,
             child: ListTile(
               title: Text("On Rahul Gandhi's Voting Machine Remark, Chirag Paswan's \"Good Sign\" Jibe",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20)),
-              subtitle: Text("am Vilas Paswan's remark came in response to Congress leader Rahul Gandhi's comment that \"EVM is not EVM, but MVM -- Modi Voting Machine\"."),
+              subtitle: Text("Ram Vilas Paswan's remark came in response to Congress leader Rahul Gandhi's comment that \"EVM is not EVM, but MVM -- Modi Voting Machine\"."),
             ),
           ),
         ],

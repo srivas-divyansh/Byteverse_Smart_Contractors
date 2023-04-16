@@ -3,6 +3,8 @@ import 'package:updates_app/Pages/home_page.dart';
 import 'package:updates_app/Pages/constituency.dart';
 import 'package:updates_app/Pages/news.dart';
 import 'package:updates_app/Pages/notice.dart';
+import 'package:updates_app/Pages/faq_page.dart';
+import 'package:updates_app/Pages/aboutus.dart';
 import 'package:updates_app/utils/routes.dart';
 
 void main(){
@@ -32,6 +34,8 @@ class MyApp extends StatelessWidget {
         MyRoutes.ConstRoute: (context)=>ConstPage(),
         MyRoutes.NewsRoute: (context)=>NewsPage(),
         MyRoutes.NoticeRoute: (context)=>NoticePage(),
+        MyRoutes.FaqsRoute: (context)=>FaqsPage(),
+        MyRoutes.AboutRoute: (context)=>AboutPage(),
       },
     );
   }

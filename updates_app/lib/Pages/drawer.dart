@@ -46,8 +46,11 @@ class _MyDrawerState extends State<MyDrawer> {
                 ),
                 SizedBox(height:20),
                 ListTile(
-                  leading: Icon(CupertinoIcons.book_solid, color: Colors.black),
-                  title:Text('Previous Election',style: TextStyle(color:Colors.black,fontWeight:FontWeight.bold,fontSize:20)),
+                  leading: Icon(CupertinoIcons.question_circle, color: Colors.black),
+                  title:Text('FAQs',style: TextStyle(color:Colors.black,fontWeight:FontWeight.bold,fontSize:20)),
+                  onTap: () {
+                    Navigator.pushNamed(context, MyRoutes.FaqsRoute);
+                  },
                 ),
                 SizedBox(height:20),
                 ListTile(
@@ -77,6 +80,9 @@ class _MyDrawerState extends State<MyDrawer> {
                 ListTile(
                   leading: Icon(CupertinoIcons.info_circle, color: Colors.black),
                   title:Text('About Us',style: TextStyle(color:Colors.black,fontWeight:FontWeight.bold,fontSize:20)),
+                  onTap: () {
+                    Navigator.pushNamed(context, MyRoutes.AboutRoute);
+                  },
                 ),
                 SizedBox(height:200),
                 ListTile(
