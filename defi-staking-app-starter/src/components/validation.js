@@ -33,7 +33,7 @@ function Validation(){
             const contractAddress=  Voting.networks[networkId].address.toString();// fetching the system from thi abis
             console.log("contractAddress= "+ contractAddress);
             console.log("account = "+account);
-    
+            console.log("voters data.length= "+votersData.length);
             console.log(`contarct address is `+contractAddress)
             const contractABI = Voting.abi;
             console.log(`contractAbi is= `+contractABI)
@@ -147,48 +147,15 @@ function Validation(){
        setFullName(event.target.value);
         // console.log("value inside the form is "+event.target.name);        
     };
-       const onSubmits = (event) =>{
+       const onSubmits = async (event) =>{
             event.preventDefault();
             console.log("alert from onSubmits: form submitted");
-            setComp(fullName);
+             await setComp(fullName);
             checkMyData();
             // console.log("VOTERS DATA = "+JSON.stringify(votersData[0]));
            
     }
-      let count=0;
-    async function checkMyData(){
-
-        for( let obj of votersData) {
-          
-            
-            // let checkKaro = await checker[obj.index].isVote().call();
-            obj = JSON.stringify(obj);
-            obj = JSON.parse(obj);
-            
-            
-            if ((obj.votingId) != comp.toString()){
-              
-              
-              console.log(`this is the id of the voter=> `+obj.votingId); 
-              
-                count++;
-                if(count<=votersData.length){
-                  continue;
-                }
-                
-            }
-            else{
-                alert("you have already voted and no longer eligible for voting");
-                     break;
-              
-            }     
-            }
-
-            if(count>=votersData.length){
-              alert('yes you can vote');
-            }
-           
-        }
+   // to check whether the app is working or not
 
         async function update(){
           console.log(comp.toString());

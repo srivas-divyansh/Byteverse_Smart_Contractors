@@ -3,12 +3,17 @@ import './App.css'
 import { ReactDOM } from 'react'
 import App from "./App"
 import Login from "./Login.js"
+// import Login from "./Login.js"
+import newValidation from "./validation2"
 
 
 ReactDOM.render(
 <>
 <div>
-<Login/>
+<newValidation/>
+</div>
+<div>
+{/* <Login/> */}
 </div>
 <div>
 <App/>
