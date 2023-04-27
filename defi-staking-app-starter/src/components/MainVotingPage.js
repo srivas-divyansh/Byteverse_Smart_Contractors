@@ -6,7 +6,9 @@
 import Voting from "../truffle_abis/voting.json"
 import React, { useState, useEffect } from "react";
 import Web3 from "web3";
+import Login from "./validation2"
 import "./App.css";
+import {NavLink} from "react-router-dom";
 //start: 15:03
 function App() {
 
@@ -16,6 +18,8 @@ function App() {
   const [countOfC, setCountOfC] = useState('');
   const [result, setResult] = useState('result will be declared soon');
   const [account, setAccount] = useState('account will be updated soon');
+
+  let whatTheResult;
 
   
 
@@ -143,10 +147,16 @@ function App() {
 
           
           
-            let r; let p;
+          useEffect(()=>{
+           console.log("result is already been triggered")
+           whatTheResult= result;
+          },[result])
+            let r;
           async function resultDeclaration() {
             r= await contract.methods.winner().call();
-               p = await setResult(r);
+            // let valuue = await JSON.stringify(r);
+            console.log("valuue = "+r)
+              setResult(r);
           }
           async function showResult(p){
             alert(p);
@@ -209,8 +219,14 @@ function App() {
 
 
   return(
+    <>
+   
       <div>
+        
       <div className="top">
+      <h4 className="Login">
+      <NavLink to="/">Login</NavLink>
+    </h4>
       <div id="heading">Welcone to the Voting Interface ©</div>
       <div id="accountName"> Account: {account}</div>
       <div id="india">Government of India</div>
@@ -251,10 +267,11 @@ function App() {
       <div id="results"><button id="results-butt" onClick={()=>{ 
         resultDeclaration();
         }}>Show Results</button></div>
-      <div id="boxContainingResult"><p id="resultsOfVoting"></p></div>
+      <div id="boxContainingResult"><p id="resultsOfVoting">{whatTheResult}</p></div>
       </div>
       
       </div>
+      </>
 
   )
   }

@@ -1,10 +1,13 @@
 import React, {useState, useEffect} from "react";
 import { Formik, Form, Field, FieldArray } from "formik";
+import {Link, Routes, Route} from "react-router-dom"
 import "./App.css";
+import Home from "./App"
 
 
 
 function improvedValidation(){
+  let  isSubmit=document.getElementById('submitResult');;// to let be true or false depends on the condition
 
     let [input , setInput] = useState(" ");
 
@@ -111,12 +114,16 @@ function improvedValidation(){
        
                if(input == obj.votingId){
                    alert("you have already voted and no longer eligible for voting");
+                 
+    
                    break; 
                }
                else{ count++;}
              }
              if(count==votersData.length){
-               alert("Yes, you can vote");
+              // isSubmit.innerHTML=`<Link to="/home">Vote </Link>`;
+               alert("Yes, you can vote, click on the Voting Interface button to vote");
+               isSubmit.removeAttribute("hidden");
                count=0;
              }
        
@@ -126,6 +133,13 @@ function improvedValidation(){
       
     return(
         <>
+
+       <div>
+       
+       </div>
+
+        
+
         <div>
         <Formik
         initialValues={{
@@ -142,7 +156,9 @@ function improvedValidation(){
             <label className="input-head">Input your Voting ID: - </label>
             <Field type="number" className="input-box" name="votingId" id="votingId"  placeholder="enter your votingId here"/>
 
-            <button type="submit" className="next" >Submit</button>
+            <button type="submit" className="next"> Submit</button>
+           <div id="submitResult" hidden><Link to="/home">Vote</Link></div>
+            {/* {isDisabled?true:false} */}
         </Form>
 
         )}
