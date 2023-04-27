@@ -6,6 +6,18 @@
 body{
     background-color: #e1e1ee;
 }
+.Login{
+    z-index: 999999999;
+    color: white;
+}
+#submitResult{
+    text-align: center;
+    margin: auto;
+    background: #242170;
+    height: 2rem;
+    width: 4rem;
+}
+
 .top{
     position: fixed;
     top: 0;
