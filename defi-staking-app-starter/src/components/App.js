@@ -5,7 +5,7 @@ import "./App.css";
 import {Link, Route, Routes, BrowserRouter} from "react-router-dom";
 import Home from "./MainVotingPage";
 import Login from "./validation2";
-import Navbar from "./navbar";
+
 
 
 function App(){
