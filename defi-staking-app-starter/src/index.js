@@ -5,11 +5,8 @@ import App from './components/App';
 import Home from "./components/MainVotingPage"
 import * as serviceWorker from './serviceWorker';
 import Login from "./components/validation2" 
-import Navbar from "./components/navbar"
 import { BrowserRouter ,Switch, Link} from 'react-router-dom';
 
-ReactDOM.render(
-<React.StrictMode>
     <App />
 </React.StrictMode>
 

@@ -38,7 +38,7 @@ function App() {
             // Load the network
             const networkId = await web3.eth.net.getId();
             const contractAddress=  Voting.networks[networkId].address.toString();// fetching the system from thi abis
-            console.log(typeof contractAddress);
+            console.log("contractAddress= "+contractAddress);
             console.log("account is"+account);
             console.log(contractAddress)
             const contractABI = Voting.abi;
@@ -59,11 +59,6 @@ function App() {
         
         loadTheApp();
       }, []);
-      // console.log(`contract is => ${contract}`)
-
-     
-
-     
       
           let votea;
         
@@ -79,12 +74,13 @@ function App() {
 
                 // statusOfA();
               })
-              .on("error", function(error) {
+      
+                .on("error", function(error) {
                 
 
-                alert('Something went wrong while voting');
-                
+                alert(`Something went wrong while voting for the party A`)
               })
+         
             }
             else{
               setTimeout(()=>{
@@ -103,10 +99,8 @@ function App() {
 
                 // statusOfB();
               })
-              .on("error", function(error) {
-
-                alert('Something went wrong while voting for B');
-                  
+              .on("error", ()=> {
+                alert('Something went wrong while voting for B');                
               })
             }
             else{
@@ -146,31 +140,17 @@ function App() {
           }
 
           
+          /// why it is not working at all
           
-          useEffect(()=>{
-           console.log("result is already been triggered")
-           whatTheResult= result;
-          },[result])
-            let r;
-          async function resultDeclaration() {
-            r= await contract.methods.winner().call();
-            // let valuue = await JSON.stringify(r);
-            console.log("valuue = "+r)
-              setResult(r);
-          }
-          async function showResult(p){
-            alert(p);
-          }
-
-          async function endOfVoting() {
+          // async function endOfVoting() {
            
-            let buttonForA = document.getElementById('buttonForA');
-            buttonForA.setAttribute("disabled", true);
-            let buttonForB = document.getElementById('buttonForB');
-            buttonForB.setAttribute("disabled", true);
-            let buttonForC = document.getElementById('buttonForC');
-            buttonForC.setAttribute("disabled", true);
-          }
+          //   let buttonForA = document.getElementById('buttonForA');
+          //   buttonForA.setAttribute("disabled", true);
+          //   let buttonForB = document.getElementById('buttonForB');
+          //   buttonForB.setAttribute("disabled", true);
+          //   let buttonForC = document.getElementById('buttonForC');
+          //   buttonForC.setAttribute("disabled", true);
+          // }
 
           useEffect(()=>{
             console.log(countA);
@@ -210,12 +190,30 @@ function App() {
           async function statusOfC() {
             konimal = await contract.methods.c().call();
             // konimal = 'ab to update karo';
-              console.log('c is called'+konimal);
-              console.log(`type of konimal = ${typeof konimal}`)
-              setCountOfC(konimal);
+            console.log('c is called'+konimal);
+            console.log(`type of konimal = ${typeof konimal}`)
+            setCountOfC(konimal);
           }
-       
           
+          
+          useEffect(()=>{
+           console.log("result is already been triggered")
+           whatTheResult= result;
+          },[result])
+            let wow;
+          async function resultDeclaration() {
+           //this part is still throwing error 
+          try{
+            wow= await contract.methods.winner().call({from: account});// I don't know
+            // let valuue = await JSON.stringify(r);
+            console.log("valuue = "+wow)
+            setResult(wow);
+          }
+          catch{
+            console.log("nhi ho raha hai ye fetch")
+          }
+          }
+        
 
 
   return(
@@ -267,7 +265,7 @@ function App() {
       <div id="results"><button id="results-butt" onClick={()=>{ 
         resultDeclaration();
         }}>Show Results</button></div>
-      <div id="boxContainingResult"><p id="resultsOfVoting">{whatTheResult}</p></div>
+      <div id="boxContainingResult"><p id="resultsOfVoting" >{result}</p></div>
       </div>
       
       </div>
