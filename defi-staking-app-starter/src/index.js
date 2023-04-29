@@ -7,6 +7,8 @@ import * as serviceWorker from './serviceWorker';
 import Login from "./components/validation2" 
 import { BrowserRouter ,Switch, Link} from 'react-router-dom';
 
+ReactDOM.render(
+<React.StrictMode>
     <App />
 </React.StrictMode>
 
