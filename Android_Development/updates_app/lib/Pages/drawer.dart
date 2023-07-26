@@ -26,7 +26,7 @@ class _MyDrawerState extends State<MyDrawer> {
                 SizedBox(height:20),
                 ListTile(
                   leading: Icon(CupertinoIcons.book_solid, color: Colors.black),
-                  title:Text('Previous Election',style: TextStyle(color:Colors.black,fontWeight:FontWeight.bold,fontSize:20)),
+                  title:Text('Past Election',style: TextStyle(color:Colors.black,fontWeight:FontWeight.bold,fontSize:20)),
                 ),
                 SizedBox(height:20),
                 ListTile(
